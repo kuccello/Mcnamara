@@ -1,0 +1,24 @@
+= McNamara
+
+STILL A WORK IN PROGRESS
+
+= usage:
+
+require 'mcnamara'
+
+use SOC::McNamara, "/usr/local/some_css_dir"
+
+
+All you need to do is have browser overrides for the css you want.
+stylename-<browser lowercase>-<version.major>-<version.minor>-<version.sub>.css
+stylename-<browser lowercase>-<version.major>-<version.minor>.css
+stylename-<browser lowercase>-<version.major>.css
+stylename-<platform lowercase spaces replaced with _>-<mobile>.css
+stylename-<platform lowercase spaces replaced with _>.css
+stylename-<browser lowercase>.css
+
+= notes:
+
+you can have spy-vs-spy upstream of this middleware
+
+if you use this middleware then you don't need spy-vs-spy downstream
