@@ -112,7 +112,7 @@ module SoldierOfCode
         puts "#{__FILE__}:#{__LINE__} #{__method__} #{e} - #{e.backtrace}"
       end
 
-      @app.call      
+      @app.call(env)      
 
     end
   end
