@@ -2,6 +2,22 @@
 
 STILL A WORK IN PROGRESS
 
+After working on Spy vs Spy (http://github.com/kuccello/spy-vs-spy) I wanted to build a system that would allow me to
+serve up css specific to various browsers if I needed to. How many times have you fixed a css design in one browser only
+to have it break in another. Then you fix the other and it break the first one! McNamara attempts to solve this issue
+by allowing you to have css browser/platform overrides that will be served up in place of your default one.
+
+Here's how it works:
+
+Say you have a web application that serves up css from the directory "/home/kuccello/myapp/public/css" and you have a
+css file called "style.css" in that directory. Now, you have a special case for Internet Explorer 6.0 and another case
+for Safari. What you would do is create another file in your css directory (can even be a sub directory deeply nested!)
+called "style-msie-6-0.css" and you put your full css into that (that is all the contents of style with the changes needed
+for internet explorer. As well you would create a file called "style-safari.css" where you would put all of the contents
+of "style.css" with the changes specific for Safari. Then you put the McNamara middleware upstream of what ever is serving
+your css and voila! when the browser is Safari the "style-safari.css" is served and when the browser is IE6.0 then the
+"style-msie-6-0.css" is served and all you need to reference in your html is "style.css"!!
+
 = usage:
 
 require 'mcnamara'

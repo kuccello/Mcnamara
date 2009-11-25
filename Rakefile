@@ -3,12 +3,13 @@ require 'rake/testtask'
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |s|
-    s.name = "spy-vs-spy"
-    s.description = s.summary = "Rack middleware to detect and provide more detail on the requesting user agent edit"
+    s.name = "mcnamara"
+    s.description = s.summary = "Rack middleware to serve up browser version/platform specific css"
     s.email = "kuccello@gmail.com"
-    s.homepage = "http://github.com/kuccello/Spy-Vs-Spy"
+    s.homepage = "http://github.com/kuccello/Mcnamara"
     s.authors = ['Kristan "Krispy" Uccello']
     s.files = FileList["[A-Z]*", "{lib,test}/**/*"]
+    s.version = "0.1"
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError
