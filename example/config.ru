@@ -1,1 +1,6 @@
-use SOC::McNamara, "/usr/local/some_css_dir"
+require '../lib/mcnamara'
+require 'myapp'
+
+use SOC::McNamara, "#{::File.dirname(__FILE__) + '/public/css'}"
+
+run MyApp

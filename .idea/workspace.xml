@@ -24,10 +24,10 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="mcnamara.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="mcnamara.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/mcnamara.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="46" selection-start="3403" selection-end="3403" vertical-scroll-proportion="0.0">
+            <state line="77" column="14" selection-start="3448" selection-end="3448" vertical-scroll-proportion="0.6839917">
               <folding />
             </state>
           </provider>
@@ -42,10 +42,100 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Rakefile" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Rakefile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Rakefile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="29" selection-start="753" selection-end="753" vertical-scroll-proportion="0.3988036">
+            <state line="25" column="29" selection-start="753" selection-end="753" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="myapp.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/example/myapp.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="13" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style-firefox.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/example/public/css/firefox/style-firefox.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="19" selection-start="49" selection-end="49" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layout.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/example/views/layout.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="4" selection-start="61" selection-end="61" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/example/views/index.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="46" selection-start="229" selection-end="229" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/example/public/js/README">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="26" selection-start="26" selection-end="26" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/example/public/img/README">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="24" selection-start="24" selection-end="24" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/example/public/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="21" selection-start="51" selection-end="51" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reset.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/example/public/css/reset.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="51" column="1" selection-start="966" selection-end="966" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style-safari.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/example/public/css/safari/style-safari.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="19" selection-start="49" selection-end="49" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style-msie-6-0.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/example/public/css/ie/style-msie-6-0.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="1" selection-start="51" selection-end="51" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -90,7 +180,16 @@
       <file leaf-file-name="config.ru" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/example/config.ru">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="45" selection-end="45" vertical-scroll-proportion="0.0">
+            <state line="0" column="16" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/example/README">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="0" selection-start="34" selection-end="65" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -115,12 +214,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/example/config.ru" />
-        <option value="$PROJECT_DIR$/lib/mcnamara.rb" />
-        <option value="$PROJECT_DIR$/README" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/mcnamara.gemspec" />
         <option value="$PROJECT_DIR$/Rakefile" />
+        <option value="$PROJECT_DIR$/example/public/js/README" />
+        <option value="$PROJECT_DIR$/example/public/img/README" />
+        <option value="$PROJECT_DIR$/example/public/css/reset.css" />
+        <option value="$PROJECT_DIR$/example/views/index.haml" />
+        <option value="$PROJECT_DIR$/example/README" />
+        <option value="$PROJECT_DIR$/example/myapp.rb" />
+        <option value="$PROJECT_DIR$/example/public/css/style.css" />
+        <option value="$PROJECT_DIR$/example/public/css/safari/style-safari.css" />
+        <option value="$PROJECT_DIR$/example/public/css/ie/style-msie-6-0.css" />
+        <option value="$PROJECT_DIR$/example/public/css/firefox/style-firefox.css" />
+        <option value="$PROJECT_DIR$/example/config.ru" />
+        <option value="$PROJECT_DIR$/example/views/layout.haml" />
+        <option value="$PROJECT_DIR$/lib/mcnamara.rb" />
       </list>
     </option>
   </component>
@@ -180,7 +289,131 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mcnamara" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mcnamara" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="example" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mcnamara" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mcnamara" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="example" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mcnamara" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mcnamara" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="example" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mcnamara" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mcnamara" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="example" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mcnamara" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mcnamara" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="example" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="safari" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mcnamara" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mcnamara" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="example" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="firefox" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -214,6 +447,18 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="RubyRunConfigurationType" factoryName="Ruby">
+      <module name="" />
+      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <method />
     </configuration>
     <configuration default="true" type="CucumberRunConfigurationType" factoryName="Cucumber">
@@ -280,15 +525,15 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32902583" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15513834" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15513834" sideWeight="0.6640159" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -324,48 +569,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/mcnamara.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="46" selection-start="3403" selection-end="3403" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LICENSE">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Change.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VERSION">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/example/config.ru">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="45" selection-end="45" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="90" selection-start="1459" selection-end="1459" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="5" selection-start="9" selection-end="9" vertical-scroll-proportion="0.0">
@@ -382,7 +585,98 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Rakefile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="29" selection-start="753" selection-end="753" vertical-scroll-proportion="0.3988036">
+        <state line="25" column="29" selection-start="753" selection-end="753" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/public/js/README">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="26" selection-start="26" selection-end="26" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/public/img/README">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="24" selection-start="24" selection-end="24" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/public/css/reset.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="1" selection-start="966" selection-end="966" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/views/index.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="46" selection-start="229" selection-end="229" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/README">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="34" selection-end="65" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/public/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="21" selection-start="51" selection-end="51" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/public/css/safari/style-safari.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="19" selection-start="49" selection-end="49" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/public/css/ie/style-msie-6-0.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="1" selection-start="51" selection-end="51" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/public/css/firefox/style-firefox.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="19" selection-start="49" selection-end="49" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/myapp.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="13" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/config.ru">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="16" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/views/layout.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="4" selection-start="61" selection-end="61" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/mcnamara.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="14" selection-start="3448" selection-end="3448" vertical-scroll-proportion="0.6839917">
           <folding />
         </state>
       </provider>

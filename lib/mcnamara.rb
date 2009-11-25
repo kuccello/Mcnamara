@@ -43,6 +43,7 @@ module SoldierOfCode
 
     def call(env)
 
+      begin
       # establish what browser we are dealing with
       # hey! is spy-vs-spy upstream?
       spy_vs_spy = env['soldierofcode.spy-vs-spy']
@@ -62,13 +63,18 @@ module SoldierOfCode
         possible_overrides << "-#{spy_vs_spy.browser}-#{spy_vs_spy.version.major}-#{spy_vs_spy.version.minor}-#{spy_vs_spy.version.sub}.css" if spy_vs_spy.version.major && spy_vs_spy.version.minor && spy_vs_spy.version.sub
         possible_overrides << "-#{spy_vs_spy.browser}-#{spy_vs_spy.version.major}-#{spy_vs_spy.version.minor}.css" if spy_vs_spy.version.major && spy_vs_spy.version.minor
         possible_overrides << "-#{spy_vs_spy.browser}-#{spy_vs_spy.version.major}.css" if spy_vs_spy.version.major
-        possible_overrides << "-#{spy_vs_spy.platform.sub(/ /,"_")}-#{(spy_vs_spy.mobile)?'mobile':''}.css" if spy_vs_spy.platform && spy_vs_spy.mobile
-        possible_overrides << "-#{spy_vs_spy.platform.sub(/ /,"_")}.css" if spy_vs_spy.platform
+        
         possible_overrides << "-#{spy_vs_spy.browser}.css"
 
         Dir["#{@css_dir}/**/*.css"].each do |css_file|
           possible_overrides.each do |override|
-            if css_file =~ "#{request_path.sub(/\.css/,override)}$"
+            request_path_sub = request_path[1..-1].downcase.sub(/\.css/, override)
+
+            file_of_intrest = request_path_sub.split("/").last
+#            puts "#{__FILE__}:#{__LINE__} #{__method__} #{file_of_intrest.downcase} |||| #{css_file.downcase[1..-1]}"
+
+            if css_file[1..-1].downcase =~ Regexp.new("#{file_of_intrest.downcase}$")
+#              puts "#{__FILE__}:#{__LINE__} #{__method__} I'm IN!!"
               # this is the file we want to serve
               css = 'Oh oo - I droped the bomb'
               File.open(css_file, "r") {|f| css = f.read}
@@ -79,7 +85,11 @@ module SoldierOfCode
       else
         @app.call(env)
       end
+      rescue => e
+        puts "#{__FILE__}:#{__LINE__} #{__method__} #{e} - #{e.backtrace}"
+      end
+
     end
   end
 end
-SOC = SoldierOfCode
+SOC = SoldierOfCode unless SOC
