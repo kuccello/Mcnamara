@@ -2,21 +2,18 @@
 
 STILL A WORK IN PROGRESS
 
-After working on Spy vs Spy (http://github.com/kuccello/spy-vs-spy) I wanted to build a system that would allow me to
-serve up css specific to various browsers if I needed to. How many times have you fixed a css design in one browser only
-to have it break in another. Then you fix the other and it break the first one! McNamara attempts to solve this issue
-by allowing you to have css browser/platform overrides that will be served up in place of your default one.
+After working on Spy vs Spy (http://github.com/kuccello/spy-vs-spy) I wanted to build a system that would allow me to serve up css specific to various browsers if I needed to. How many times have you fixed a css design in one browser only to have it break in another. Then you fix the other and it break the first one! McNamara attempts to solve this issue by allowing you to have css browser/platform overrides that will be served up in place of your default one.
 
 Here's how it works:
 
-Say you have a web application that serves up css from the directory "/home/kuccello/myapp/public/css" and you have a
-css file called "style.css" in that directory. Now, you have a special case for Internet Explorer 6.0 and another case
-for Safari. What you would do is create another file in your css directory (can even be a sub directory deeply nested!)
-called "style-msie-6-0.css" and you put your full css into that (that is all the contents of style with the changes needed
-for internet explorer. As well you would create a file called "style-safari.css" where you would put all of the contents
-of "style.css" with the changes specific for Safari. Then you put the McNamara middleware upstream of what ever is serving
-your css and voila! when the browser is Safari the "style-safari.css" is served and when the browser is IE6.0 then the
-"style-msie-6-0.css" is served and all you need to reference in your html is "style.css"!!
+Say you have a web application that serves up css from the directory "/home/kuccello/myapp/public/css" and you have a css file called "style.css" in that directory. Now, you have a special case for Internet Explorer 6.0 and another case for Safari. What you would do is create another file in your css directory (can even be a sub directory deeply nested!) called "style-msie-6-0.css" and you put your full css into that (that is all the contents of style with the changes needed for internet explorer. As well you would create a file called "style-safari.css" where you would put all of the contents of "style.css" with the changes specific for Safari. Then you put the McNamara middleware upstream of what ever is serving your css and voila! when the browser is Safari the "style-safari.css" is served and when the browser is IE6.0 then the "style-msie-6-0.css" is served and all you need to reference in your html is "style.css"!!
+
+Now there is more, you can also use comment style overrides in your file names too.
+
+>> style-msie-lte-6.css (less than or equal to IE 6.0)
+>> style-msie-gt-6.css (greater than)
+>> style-msie-7-to-8.css OR style-msie-8-to-7.css (reversed)
+>> style-msie-6-to-8.css OR style-msie-8-to-6.css TWO VERSION DIFFERENCE
 
 = usage:
 
@@ -24,17 +21,22 @@ require 'mcnamara'
 
 use SOC::McNamara, "/usr/local/some_css_dir"
 
-
 All you need to do is have browser overrides for the css you want.
 stylename-<browser lowercase>-<version.major>-<version.minor>-<version.sub>.css
 stylename-<browser lowercase>-<version.major>-<version.minor>.css
+stylename-<browser lowercase>-<version.major>-to-<version.major-1>.css
+stylename-<browser lowercase>-<version.major>-to-<version.major-2>.css
+stylename-<browser lowercase>-<version.major-1>-to-<version.major>.css
+stylename-<browser lowercase>-<version.major-2>-to-<version.major>.css
+stylename-<browser lowercase>-lte-<version.major>.css
+stylename-<browser lowercase>-gte-<version.major>.css
+stylename-<browser lowercase>-gt-<version.major>.css
+stylename-<browser lowercase>-lt-<version.major>.css
 stylename-<browser lowercase>-<version.major>.css
-stylename-<platform lowercase spaces replaced with _>-<mobile>.css
-stylename-<platform lowercase spaces replaced with _>.css
 stylename-<browser lowercase>.css
 
 = notes:
 
-you can have spy-vs-spy upstream of this middleware
+you can have spy-vs-spy upstream of this middleware but it is not a requirement - McNamara will create its own Spy vs Spy instance as needed and put it into the rack env
 
 if you use this middleware then you don't need spy-vs-spy downstream

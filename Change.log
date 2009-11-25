@@ -1,0 +1,11 @@
+-- Nov. 25th, 2009
+
+* added some file name functionality to support a request:
+    "Would be nice to be able to name CSS files that cover multiple versions of a specific folder, e.g.:
+        style-msie-lte-6.css (less than or equal to IE 6.0)
+        style-msie-gt-6.css (greater than)
+        style-msie-7-to-8.css OR style-msie-8-to-7.css (reversed)"
+
+-- Nov. 24th, 2009
+
+* coded initial version of McNamara

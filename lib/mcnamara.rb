@@ -41,6 +41,35 @@ module SoldierOfCode
       @css_dir = css_dir
     end
 
+    def build_possible_overrides(spy_vs_spy)
+
+      possible_overrides = []
+
+      possible_overrides << "-#{spy_vs_spy.browser}-#{spy_vs_spy.version.major}-#{spy_vs_spy.version.minor}-#{spy_vs_spy.version.sub}.css" if spy_vs_spy.version.major && spy_vs_spy.version.minor && spy_vs_spy.version.sub
+
+      possible_overrides << "-#{spy_vs_spy.browser}-#{spy_vs_spy.version.major}-#{spy_vs_spy.version.minor}.css" if spy_vs_spy.version.major && spy_vs_spy.version.minor
+
+      # trickier conditionals
+      possible_overrides << "-#{spy_vs_spy.browser}-#{spy_vs_spy.version.major}-to-#{spy_vs_spy.version.major.to_i-1}.css" if spy_vs_spy.version.major && (spy_vs_spy.version.major.to_i - 1 > 0)
+      possible_overrides << "-#{spy_vs_spy.browser}-#{spy_vs_spy.version.major.to_i-1}-to-#{spy_vs_spy.version.major}.css" if spy_vs_spy.version.major && (spy_vs_spy.version.major.to_i - 1 > 0)
+
+      possible_overrides << "-#{spy_vs_spy.browser}-#{spy_vs_spy.version.major}-to-#{spy_vs_spy.version.major.to_i-2}.css" if spy_vs_spy.version.major && (spy_vs_spy.version.major.to_i - 2 > 0)
+      possible_overrides << "-#{spy_vs_spy.browser}-#{spy_vs_spy.version.major.to_i-2}-to-#{spy_vs_spy.version.major}.css" if spy_vs_spy.version.major && (spy_vs_spy.version.major.to_i - 2 > 0)
+
+      # multi version coverage
+      possible_overrides << "-#{spy_vs_spy.browser}-gte-#{spy_vs_spy.version.major}.css" if spy_vs_spy.version.major
+      possible_overrides << "-#{spy_vs_spy.browser}-lte-#{spy_vs_spy.version.major}.css" if spy_vs_spy.version.major
+      possible_overrides << "-#{spy_vs_spy.browser}-gt-#{spy_vs_spy.version.major}.css" if spy_vs_spy.version.major
+      possible_overrides << "-#{spy_vs_spy.browser}-lt-#{spy_vs_spy.version.major}.css" if spy_vs_spy.version.major
+
+      possible_overrides << "-#{spy_vs_spy.browser}-#{spy_vs_spy.version.major}.css" if spy_vs_spy.version.major
+
+      possible_overrides << "-#{spy_vs_spy.browser}.css"
+      
+      return possible_overrides
+
+    end
+
     def call(env)
 
       begin
@@ -59,12 +88,7 @@ module SoldierOfCode
 
         # need a base directory to scann...
         # TODO -- ripe for a cache
-        possible_overrides = []
-        possible_overrides << "-#{spy_vs_spy.browser}-#{spy_vs_spy.version.major}-#{spy_vs_spy.version.minor}-#{spy_vs_spy.version.sub}.css" if spy_vs_spy.version.major && spy_vs_spy.version.minor && spy_vs_spy.version.sub
-        possible_overrides << "-#{spy_vs_spy.browser}-#{spy_vs_spy.version.major}-#{spy_vs_spy.version.minor}.css" if spy_vs_spy.version.major && spy_vs_spy.version.minor
-        possible_overrides << "-#{spy_vs_spy.browser}-#{spy_vs_spy.version.major}.css" if spy_vs_spy.version.major
-        
-        possible_overrides << "-#{spy_vs_spy.browser}.css"
+        possible_overrides = build_possible_overrides(spy_vs_spy)
 
         Dir["#{@css_dir}/**/*.css"].each do |css_file|
           possible_overrides.each do |override|
