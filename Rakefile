@@ -9,7 +9,7 @@ begin
     s.homepage = "http://github.com/kuccello/Mcnamara"
     s.authors = ['Kristan "Krispy" Uccello']
     s.files = FileList["[A-Z]*", "{lib,test}/**/*"]
-    s.version = "0.3"
+#    s.version = "0.3"
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError

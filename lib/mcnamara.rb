@@ -73,18 +73,19 @@ module SoldierOfCode
     def call(env)
 
       begin
-        # establish what browser we are dealing with
-        # hey! is spy-vs-spy upstream?
-        spy_vs_spy = env['soldierofcode.spy-vs-spy']
-        unless spy_vs_spy
-          http_user_agent = env['HTTP_USER_AGENT']
-          env['soldierofcode.spy-vs-spy'] = SpyVsSpy.new(http_user_agent)
-          spy_vs_spy = env['soldierofcode.spy-vs-spy']
-        end
 
         # look for what css we are after
         request_path = env['REQUEST_PATH']
         if request_path =~ /\.css$/
+
+          # establish what browser we are dealing with
+          # hey! is spy-vs-spy upstream?
+          spy_vs_spy = env['soldierofcode.spy-vs-spy']
+          unless spy_vs_spy
+            http_user_agent = env['HTTP_USER_AGENT']
+            env['soldierofcode.spy-vs-spy'] = SpyVsSpy.new(http_user_agent)
+            spy_vs_spy = env['soldierofcode.spy-vs-spy']
+          end
 
           # need a base directory to scann...
           # TODO -- ripe for a cache
@@ -100,8 +101,8 @@ module SoldierOfCode
               if css_file[1..-1].downcase =~ Regexp.new("#{file_of_intrest.downcase}$")
 #              puts "#{__FILE__}:#{__LINE__} #{__method__} I'm IN!!"
                 # this is the file we want to serve
-                css = 'Oh oo - I droped the bomb'
-                File.open(css_file, "r") {|f| css = f.read}
+                css = '/* Oh oo - I droped the bomb */'
+                File.open(css_file, "r") {|f| css = f.read} # file is closed when the block is done. TODO -- cache this
                 return [200, {"Content-Type"=>"text/css"}, css]
               end
             end
